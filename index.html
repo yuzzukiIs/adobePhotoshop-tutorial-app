@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <title>Images flip effects</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+</head>
+
+<body id="background">
+    <h1>Рабочие инстурменты Adobe Photoshop</h1>
+    <div class="container">
+        <h3>Инструменты группы «Выделение»</h3>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/1.png">
+            </div>
+            <div class="details">
+                <h2>Selection tools</h2>
+                <p> Прямоугольная область (hotkey: M) — выделяет прямоугольную (квадратную при зажатой клавише shift)
+                    область.
+                    Овальная область (M) — выделяет овальную (круглую при зажатой клавише shift).
+                    Вертикальная строка — выделяет строку пикселей.
+                    Горизонтальная строка — выделяет столбец пикселей.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/2.png">
+            </div>
+            <div class="details">
+                <h2>Lasso</h2>
+                <p> Лассо (L) — выделение областей свободной формы.
+                    Прямолинейное лассо (L) - предназначено для выделения в изображении областей, ограниченных
+                    многоугольниками, составленными из отрезков прямых линий произвольной формы.
+                    Магнитное лассо (L) - используется для создания выделений вокруг объектов. Границы области
+                    "цепляются" за края объекта, на которых происходит смена цветового тона и насыщенности.
+                    (для завершения выделения с помощью лассо необходимо замкнуть область).</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/3.png">
+            </div>
+            <div class="details">
+                <h2>Move</h2>
+                <p>Перемещение (V) — используется для перемещение выделенных слоев, объектов, направляющих. При зажатой
+                    клавише Shift перемещение будет строго по горизонтали или вертикали.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/4.png">
+            </div>
+            <div class="details">
+                <h2>Magic Wand</h2>
+                <p>Волшебная палочка (в раздвижном меню еще будет «быстрое выделение») (W) - Выделяет области на основе
+                    сходства цветов смежных пикселов.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/5.png">
+            </div>
+            <div class="details">
+                <h2>Quick Selection</h2>
+                <p>Инструмент «Быстрое выделение» позволяет быстро «нарисовать» выделенную область с помощью
+                    регулируемого круглого кончика кисти.</p>
+            </div>
+        </div>
+        <h3>Инструменты группы «Фрагмент и рамка»</h3>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/6.png">
+            </div>
+            <div class="details">
+                <h2>Slice</h2>
+                <p>17. Раскройка (K) — создает ломтик для карт рисунков, используемых в документах HTML.
+                    Выделение фрагмента (K) — выделяет ломтик и редактирует его.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/7.png">
+            </div>
+            <div class="details">
+                <h2>Crop</h2>
+                <p>Рамка (С) — вырезает из изображения выделенную область, отсекая ненужные фрагменты.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/8.png">
+            </div>
+            <div class="details">
+                <h2>Slice Select</h2>
+                <p>Инструмент «Выделение фрагмента» (Slice Select) выделяет фрагменты.</p>
+            </div>
+        </div>
+        <h3>Инструменты группы «Ретуширование»</h3>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/9.png">
+            </div>
+            <div class="details">
+                <h2>Spot Healing Brush</h2>
+                <p>Точечная восстанавливающая кисть (J) — использует пиксели по образцу изображения или узора и
+                    сопоставляет их текстуру, освещение, прозрачность и затенение с соответствующими параметрами
+                    исправляемых пикселей.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/10.png">
+            </div>
+            <div class="details">
+                <h2>Healing Brush</h2>
+                <p>Восстанавливающая кисть (J) - использует пикселы по образцу изображения или узора и сопоставляет их
+                    текстуру, освещение, прозрачность и затенение с соответствующими параметрами исправляемых пикселов
+                    (отличие от точечной восстанавливающей кисти в том, что нужно выделять область из которой будет
+                    копироваться пиксели).</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/11.png">
+            </div>
+            <div class="details">
+                <h2>Patch</h2>
+                <p>Заплатка (J) - служит для исправления дефектов. Нужно построить выделение донорской области,
+                    совпадающее с дефектом по своей геометрии и микроструктуре, и перетащить выделение инструментом на
+                    поврежденный фрагмент.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/12.png">
+            </div>
+            <div class="details">
+                <h2>Red Eye</h2>
+                <p>Красные глаза (J) — используется для удаления красных глаз на фотографиях.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/13.png">
+            </div>
+            <div class="details">
+                <h2>Clone Stamp</h2>
+                <p>Штамп (S) — копирует пиксели из одной области в другую.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/14.png">
+            </div>
+            <div class="details">
+                <h2>Pattern Stamp</h2>
+                <p>Узорный штамп (S) — копирует выделенную область как узор.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/15.png">
+            </div>
+            <div class="details">
+                <h2>Eraser</h2>
+                <p> Ластик (E) — закрашивает объекты в цвет предыдущего слоя.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/16.png">
+            </div>
+            <div class="details">
+                <h2>Background Eraser</h2>
+                <p>Фоновый ластик (Е) — заменяет фон изображения прозрачной областью.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/17.png">
+            </div>
+            <div class="details">
+                <h2>Magic Eraser</h2>
+                <p>Волшебный ластик (Е) — удаляет подобные цвета, распологающиеся в зоне кисти.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/18.png">
+            </div>
+            <div class="details">
+                <h2>Blur</h2>
+                <p>Размытие (R) – имитирует одноименный фильтр в фотошопе.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/19.png">
+            </div>
+            <div class="details">
+                <h2>Sharpen</h2>
+                <p>Резкость (R) – имитирует одноименный фильтр в фотошопе.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/20.png">
+            </div>
+            <div class="details">
+                <h2>Smudge</h2>
+                <p>Размазывание (R) — смещает пиксили, имитируя мазки.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/21.png">
+            </div>
+            <div class="details">
+                <h2>Dodge</h2>
+                <p>Осветлитель (О) — осветляет отдельную область изображения (можно использовать для создания виньетки).
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/22.png">
+            </div>
+            <div class="details">
+                <h2>Burn</h2>
+                <p>Затемнитель (О) — затемняет отдельную область изображения (можно использовать для создания виньетки).
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/23.png">
+            </div>
+            <div class="details">
+                <h2>Sponge</h2>
+                <p>Губка (О) — увеличивает или уменьшает насыщенность отдельной области изображения.</p>
+            </div>
+        </div>
+        <h3>Инструменты группы «Рисование»</h3>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/24.png">
+            </div>
+            <div class="details">
+                <h2>Gradient</h2>
+                <p>Градиент (G) — позволяет заливать выделенную область плавным переходом от одного цвета к другому.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/25.png">
+            </div>
+            <div class="details">
+                <h2>Paint Bucket</h2>
+                <p>Заливка (G) — позволяет закрашивать однородные пикселы выделенной области изображения выбранным
+                    цветом.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/26.png">
+            </div>
+            <div class="details">
+                <h2>History Brush</h2>
+                <p>Архивная кисть (Y) — рисует мазками, созданными на основе предыдущей версии изображения.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/27.png">
+            </div>
+            <div class="details">
+                <h2>Art History brush</h2>
+                <p>Архивная художественная кисть (Y) — рисует художественными мазками, созданными на основе предыдущей
+                    версии изображения.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/28.png">
+            </div>
+            <div class="details">
+                <h2>Brush</h2>
+                <p>Кисть (В) — основной инструмент для рисование, имеет много разновидностей.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/29.png">
+            </div>
+            <div class="details">
+                <h2>Pencil</h2>
+                <p>Карандаш (В) — рисует линии основным цветом с жесткими краями.</p>
+            </div>
+        </div>
+        <h3>Инструменты группы «Рисование и текст»</h3>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/30.png">
+            </div>
+            <div class="details">
+                <h2>Path selection</h2>
+                <p>Инструмент «Выделение контура» выделяет фигуры или сегменты, отображая узловые точки, линии
+                    направления и точки направления. Выделяет кривую Безье.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/31.png">
+            </div>
+            <div class="details">
+                <h2>Add anchor point</h2>
+                <p>Добавить опорную точку — добавляет новую узловую точку в контуре или кривой Безье.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/32.png">
+            </div>
+            <div class="details">
+                <h2>Convert anchor point</h2>
+                <p>Конвертировать опорную точку — преобразует угловую точку в точку привязки и наоборот (опять же в
+                    кривых Безье или контурах).</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/33.png">
+            </div>
+            <div class="details">
+                <h2>Delete anchor point</h2>
+                <p>Удалить опорную точку — удаляет выбранную узловую точку в контуре или кривой Безье.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/34.png">
+            </div>
+            <div class="details">
+                <h2>Partial selection</h2>
+                <p>Частичное выделение (А) — применяется для корректировки контура, путем перемещения узловых точек.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/35.png">
+            </div>
+            <div class="details">
+                <h2>Feather</h2>
+                <p>Перо (Р) — используется для рисования кривых Безье и контуров по точкам привязки.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/36.png">
+            </div>
+            <div class="details">
+                <h2>Text</h2>
+                <p>Инструмент «Текст» создает текст на изображении. Более подробно про инструменты для работы с текстом
+                    можно прочитать в посте</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/37.png">
+            </div>
+            <div class="details">
+                <h2>Type mask</h2>
+                <p>Инструмент «Текст-маска» создает области выделения в форме текста.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/38.png">
+            </div>
+            <div class="details">
+                <h2>Shape</h2>
+                <p>Группа инструментов «Фигура» и инструмент «Линия» рисуют фигуры и линии на обычном слое или
+                    слое-фигуре.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/39.png">
+            </div>
+            <div class="details">
+                <h2>Custom Shape</h2>
+                <p>Инструмент «Произвольная фигура» создает заказные фигуры, выбранные из списка заказных фигур.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/40.png">
+            </div>
+            <div class="details">
+                <h2>Horizontal/vertical mask text</h2>
+                <p>Горизонтальный/вертикальный текст-маска (Т) — используется для создания выделенной области в форме
+                    символов текста.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/41.png">
+            </div>
+            <div class="details">
+                <h2>Vertical text</h2>
+                <p>Вертикальный текст (Т) — добавляет вертикальный текст на изображение.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/42.png">
+            </div>
+            <div class="details">
+                <h2>Horizontal text</h2>
+                <p>Горизонтальный текст (Т) — добавляет горизонтальный текст на изображение.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/43.png">
+            </div>
+            <div class="details">
+                <h2>Custom Shape</h2>
+                <p>Инструмент «Произвольная фигура» создает заказные фигуры, выбранные из списка заказных фигур.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/44.png">
+            </div>
+            <div class="details">
+                <h2>Line</h2>
+                <p>Линия (U) — рисует линию.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/45.png">
+            </div>
+            <div class="details">
+                <h2>Polygon</h2>
+                <p>Многоугольник (U) — рисует заданный многоугольник.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/46.png">
+            </div>
+            <div class="details">
+                <h2>Ellipse</h2>
+                <p>Эллипс (U) — рисует эллипс.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/47.png">
+            </div>
+            <div class="details">
+                <h2>Rounded Rectangle</h2>
+                <p>Прямоугольник со скругленными углами (U) — рисует прямоугольник со скругленными углами.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/48.png">
+            </div>
+            <div class="details">
+                <h2>Rectangle</h2>
+                <p>Прямоугольник (U) — рисует прямоугольник.</p>
+            </div>
+        </div>
+        <h3>Комментарии, измерения и инструменты навигации</h3>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/49.png">
+            </div>
+            <div class="details">
+                <h2>Comments</h2>
+                <p>Комментарии (N) — добавляет на рисунок комментарии и пометки;</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/50.png">
+            </div>
+            <div class="details">
+                <h2>Audio</h2>
+                <p>Аудио (N) — добавляет на рисунок звуковые комментарии и пометки.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/51.png">
+            </div>
+            <div class="details">
+                <h2>Eyedropper</h2>
+                <p>Пипетка (I) — позволяет задать основной и фоновый цвета путем взятия проб цвета на изображении или из
+                    палитр "Синтез" и "Каталог".</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/51.png">
+            </div>
+            <div class="details">
+                <h2>Color standard</h2>
+                <p>Цветовой эталон (I) - служит для размещения в изображении от одной до четырех контрольных точек,
+                    цветовые параметры которых отображаются в палитре инфо и тем самым дают, возможность пользователю
+                    непрерывно следить за изменением цвета очень важных фрагментов.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/1.png">
+            </div>
+            <div class="details">
+                <h2>Ruler</h2>
+                <p>Линейка (I) — используется для измерений расстояний и углов на изображении.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/2.png">
+            </div>
+            <div class="details">
+                <h2>Hand</h2>
+                <p>Рука (Н) — используется для просмотра частей изображений, который не попали на экран.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="img/3.png">
+            </div>
+            <div class="details">
+                <h2>Scale</h2>
+                <p>Масштаб (Z) — используется для изменения масштаба в большую или меньшую сторону.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
